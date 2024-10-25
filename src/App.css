@@ -1,0 +1,105 @@
+.projectList {
+  column-count: 3;
+  column-gap: 0;
+  width: 50%;
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: 0;
+  padding: 0.2rem;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  outline: none;
+  border: 1px solid #333;
+  margin: 0.2rem;
+}
+
+.custom-button.selected {
+  background-color: lightgray;
+}
+
+#root {
+  width: 100%;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  button {
+    background-color: white;
+    color: black; 
+  }
+
+  :root {
+    background-color: #ffffff; 
+    color: #000000; 
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  button {
+    background-color: black; 
+    color: white; 
+  }
+
+  :root {
+    background-color: #000000; 
+    color: #ffffff; 
+  }
+}
